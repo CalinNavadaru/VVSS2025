@@ -85,6 +85,8 @@ public class Task implements Serializable, Cloneable {
     }
 
     public void setTime(Date start, Date end, int interval){
+        if (start.before(new Date(0)) || end.before(new Date(0)) || end.before(start) || interval <= 0)
+            throw new IllegalArgumentException();
         this.time = start;
         this.start = start;
         this.end = end;

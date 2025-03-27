@@ -1,2 +1,2 @@
-tasks\services\DateServiceTest.class
-tasks\model\TaskTest.class
+tasks/services/DateServiceTest.class
+tasks/model/TaskTest.class
