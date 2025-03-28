@@ -144,7 +144,7 @@ public class NewEditController {
         Task collectedFieldsTask = collectFieldsData();
         if (incorrectInputMade) return;
 
-        if (currentTask == null){//no task was chosen -> add button was pressed
+        if (clickedButton == null){//no task was chosen -> add button was pressed
             tasksList.add(collectedFieldsTask);
         }
         else {
