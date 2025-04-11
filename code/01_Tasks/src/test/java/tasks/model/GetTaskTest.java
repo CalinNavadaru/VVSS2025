@@ -16,7 +16,7 @@ class GetTaskTest {
     void setUp() {
         try {
             task1 = new Task("new task", Task.getDateFormat().parse("2024-10-10 10:10"));
-            task2 = new Task("new task2", Task.getDateFormat().parse("2024-10-10 10:10"));
+            task2 = new Task("new task2", Task.getDateFormat().parse("2024-10-10 10:10"),Task.getDateFormat().parse("2024-10-10 10:11"),2);
             task3 = new Task("new task3", Task.getDateFormat().parse("2024-10-10 10:10"));
             task4 = new Task("new task4", Task.getDateFormat().parse("2023-10-10 10:10"));
             task1.setActive(true);
@@ -59,8 +59,9 @@ class GetTaskTest {
         taskList1.add(task4);
         try {
             taskList1.incoming(Task.getDateFormat().parse("2024-10-10 00:00"), Task.getDateFormat().parse("2024-10-09 00:00"));
-            assertEquals (1,0);
+            assert(false);
         } catch (Exception e) {
+            assert(true);
             e.printStackTrace();
         }
     }
