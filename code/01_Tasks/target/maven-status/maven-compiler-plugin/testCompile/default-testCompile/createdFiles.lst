@@ -1,2 +1,6 @@
-tasks/services/DateServiceTest.class
-tasks/model/TaskTest.class
+tasks\model\TaskTestMock.class
+tasks\model\TaskTest.class
+tasks\services\TaskIOTest.class
+tasks\controller\ControllerTest.class
+tasks\model\GetTaskTest.class
+tasks\model\taskTest2.class

@@ -1,4 +1,4 @@
 -------------------------------------------------------------------------------
-Test set: tasks.model.TaskTest
+Test set: tasks.services.TaskIOTest
 -------------------------------------------------------------------------------
-Tests run: 10, Failures: 0, Errors: 0, Skipped: 0, Time elapsed: 0.062 s - in tasks.model.TaskTest
+Tests run: 3, Failures: 0, Errors: 0, Skipped: 0, Time elapsed: 0.094 s - in tasks.services.TaskIOTest
